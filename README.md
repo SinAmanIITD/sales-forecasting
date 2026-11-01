@@ -121,10 +121,11 @@ All models use:
 python3 src/sql_analysis.py   # loads cleaned data into SQLite, runs sql/rossmann_analysis.sql, saves results to reports/
 ```
 
-See [`sql/rossmann_analysis.sql`](sql/rossmann_analysis.sql) for the queries (weekly trend, promo/holiday impact, day-of-week seasonality, top stores, competition-distance analysis) and [`INTERVIEW_PREP.md`](INTERVIEW_PREP.md) for the real findings and business interpretation.
+See [`sql/rossmann_analysis.sql`](sql/rossmann_analysis.sql) for the queries (weekly trend, promo/holiday impact, day-of-week seasonality, top stores, competition-distance analysis).
 
----
-
-## Interview Prep
-
-Read [`INTERVIEW_PREP.md`](INTERVIEW_PREP.md) before any interview where this project comes up — full pipeline walkthrough with every design decision justified, real numbers verified against the trained checkpoints, and a question bank with model answers.
+Key findings: stores running a promo average ~39% higher daily sales than
+non-promo days across every store type; Sunday is the highest-selling day of
+the week despite fewer stores being open, driven by a much higher
+customers-per-store count; and 14 of the top 20 stores by average daily
+sales are StoreType A, despite StoreType B stores having the highest
+average sales per store overall.

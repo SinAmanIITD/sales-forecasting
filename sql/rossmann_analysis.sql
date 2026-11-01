@@ -1,8 +1,6 @@
 -- Rossmann Sales Analysis — SQL layer
 -- Run against the `sales` table (cleaned, store-merged train.csv) loaded by
--- src/sql_analysis.py. Mirrors the CV claim: "Processed 1M+ Rossmann sales
--- records via Python and SQL, preparing high-quality datasets for
--- forecasting/analysis."
+-- src/sql_analysis.py.
 
 -- 1. Weekly sales trend (used to sanity-check seasonality before modeling)
 SELECT

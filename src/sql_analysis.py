@@ -3,10 +3,10 @@ Loads the cleaned, store-merged Rossmann dataset into an in-memory SQLite
 database and runs the analytical queries in sql/rossmann_analysis.sql,
 saving each result set to reports/ as a CSV.
 
-This is the "SQL" half of the CV claim: "Processed 1M+ Rossmann sales
-records via Python and SQL" — the Python pipeline (src/data_pipeline.py)
-handles cleaning/feature engineering/sequence building for the RNN models;
-this script handles the exploratory, aggregate-level SQL analysis.
+The Python pipeline (src/data_pipeline.py) handles cleaning, feature
+engineering, and sequence building for the RNN models; this script covers
+the exploratory, aggregate-level SQL analysis (trends, promo/holiday
+impact, store rankings).
 """
 import re
 import sqlite3
