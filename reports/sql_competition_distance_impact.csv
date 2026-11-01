@@ -1,0 +1,5 @@
+competition_bucket,n_stores,avg_sales
+0-500m,218,7615.26
+500m-2km,283,6920.04
+2km-10km,427,6696.58
+10km+,187,6825.05
